@@ -3,15 +3,15 @@
 /**
  * _strpbrk - function that searches a string for any of a set of bytes
  *
- * @s:first occurrence in the string
+ * @s: The string to be searched.
+ * @accept: The set of bytes to be searched for.
  *
- * @accept: matches one of the bytes, or @NULL if no such byte
- *
- * Return: a pointer to the byte
+ * Return: If a set is matched - a pointer to the matched byte.
+ *         If no set is matched - NULL.
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int index;
 	while (*s)
 	{
 		for (index = 0; accept[index]; index++)
