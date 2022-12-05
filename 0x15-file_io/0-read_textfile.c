@@ -22,3 +22,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (buffer == NULL)
 		return (0);
 }
+
+	free(buffer);
+	close(o);
+
+	return (w);
+}
